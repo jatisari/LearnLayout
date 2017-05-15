@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:text="Your Name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/tvName"
+        android:layout_toRightOf="@id/tvName"/>
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:text="Your Email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvName"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/txtName"
+        android:layout_below="@id/txtName" />
+
+    <TextView
+        android:id="@+id/tvDetail"
+        android:text="Your Detail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail"
+        android:padding="10dp"/>
+
+    <EditText
+        android:id="@+id/txtDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fffef4d2"
+        android:gravity="top"
+        android:layout_alignLeft="@id/txtEmail"
+        android:layout_below="@id/txtEmail"
+        android:layout_above="@+id/btnSend1" />
+
+    <Button
+        android:id="@+id/btnSend1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>
